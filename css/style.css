@@ -1,0 +1,54 @@
+/*
+Light blue: #0c88f2
+Medium blue: #0c6fe4
+Dark blue: #263b56
+*/
+
+/* TODO
+    check how grid works
+    shall I use flex?
+    shall I try to use same effect without images?
+    think about a mobile view
+    have min-width on side bar
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border-box: it accounts for any border and padding in the values specified for width and height*/
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #5a7489;
+}
+
+
+.main {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.sidebar {
+    background-image: url(../img/bg\ sidebar.png);
+    background-size: cover;
+}
+
+.content {
+    background-image: url(../img/main-bg.png);
+    background-size: cover;
+    background-position: top;
+    height: 93vh;
+}
+
+.footer {
+    height: 7vh;
+    background-image: url(../img/bg\ nav.png);
+}
