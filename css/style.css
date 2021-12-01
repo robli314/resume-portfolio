@@ -28,27 +28,31 @@ body {
     color: #5a7489;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
 
 .main {
-    height: 100%;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 5fr;
+    display: flex;
+    height: 93vh;
+}
+
+.footer {
+    background-image: url(../img/bg\ nav.png);
+    flex-grow: 1;
+    min-height: 60px;
 }
 
 .sidebar {
     background-image: url(../img/bg\ sidebar.png);
     background-size: cover;
+    min-width: 250px;
 }
 
 .content {
+    flex-grow: 1;
     background-image: url(../img/main-bg.png);
     background-size: cover;
-    background-position: top;
-    height: 93vh;
-}
-
-.footer {
-    height: 7vh;
-    background-image: url(../img/bg\ nav.png);
 }
