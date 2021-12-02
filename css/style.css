@@ -6,7 +6,6 @@ Dark blue: #263b56
 
 /* TODO
     check how grid works
-    shall I use flex?
     shall I try to use same effect without images?
     think about a mobile view
     have min-width on side bar
@@ -25,7 +24,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.7;
-    color: #5a7489;
+    color: #95a8b7;
 }
 
 .container {
@@ -37,6 +36,8 @@ body {
 .main {
     display: flex;
     height: 93vh;
+    overflow: auto;
+    min-height: 600px; /* Not sure if this the best solution*/
 }
 
 .footer {
@@ -47,8 +48,43 @@ body {
 
 .sidebar {
     background-image: url(../img/bg\ sidebar.png);
-    background-size: cover;
     min-width: 250px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 80px 20px 20px 20px;
+}
+
+.picture-box {
+    margin-bottom: 50px;
+}
+
+.description-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.description-box h2 {
+    text-transform: uppercase;
+    color: #5a7489;
+}
+
+.about-box {
+    font-size: 0.8em;
+    margin-top: 50px;
+    /* it prevents overflow */
+    word-break: break-all;
+    border-radius: 10%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.role {
+    font-size: 1.3em;
 }
 
 .content {
