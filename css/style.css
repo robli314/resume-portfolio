@@ -9,6 +9,7 @@ Dark blue: #263b56
     shall I try to use same effect without images?
     think about a mobile view
     have min-width on side bar
+    use transform: translate(-50%, -50%) (x, y)
 
 */
 
@@ -37,7 +38,8 @@ body {
     display: flex;
     height: 93vh;
     overflow: auto;
-    min-height: 600px; /* Not sure if this the best solution*/
+    min-height: 600px;
+    /* Not sure if this the best solution*/
 }
 
 .footer {
@@ -54,11 +56,11 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    padding: 80px 20px 20px 20px;
 }
 
 .picture-box {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    transform: translate(0%, 20%);
 }
 
 .description-box {
@@ -66,6 +68,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transform: translate(0%, 10%);
 }
 
 .description-box h2 {
@@ -76,15 +79,17 @@ body {
 .about-box {
     font-size: 0.8em;
     margin-top: 50px;
-    /* it prevents overflow */
-    word-break: break-all;
-    border-radius: 10%;
+    border-radius: 50%;
     text-align: center;
     vertical-align: middle;
+    padding: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .role {
     font-size: 1.3em;
+    letter-spacing: 0.03em;
 }
 
 .content {
