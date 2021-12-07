@@ -97,3 +97,30 @@ body {
     background-image: url(../img/main-bg.png);
     background-size: cover;
 }
+
+.social-media-container {
+    display: flex;
+}
+
+.social-media-icon {
+    width: 21px;
+    height: 22px;
+    background-repeat: no-repeat;
+    margin: 12px 4px 4px 4px;
+}
+
+.facebook {
+    background-image: url('../img/Facebook.png');
+}
+
+.dribble {
+    background-image: url('../img/Dribble.png');
+}
+
+.behance {
+    background-image: url('../img/Behance.png');
+}
+
+.instagram {
+    background-image: url('../img/Insta.png');
+}
