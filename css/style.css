@@ -109,18 +109,12 @@ body {
     margin: 12px 4px 4px 4px;
 }
 
-.facebook {
-    background-image: url('../img/Facebook.png');
+.social-media-icon img {
+    transition: all 350ms ease-out;
+    -webkit-transition: all 350ms ease-out;
+    -o-transition: all 350ms ease-out;
 }
 
-.dribble {
-    background-image: url('../img/Dribble.png');
-}
-
-.behance {
-    background-image: url('../img/Behance.png');
-}
-
-.instagram {
-    background-image: url('../img/Insta.png');
+.social-media-icon img:hover {
+    opacity: 0.8;
 }
